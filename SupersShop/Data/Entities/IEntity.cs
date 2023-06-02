@@ -4,7 +4,6 @@
     {
         int Id { get; set; }
         
-        
-
+       
     }
 }

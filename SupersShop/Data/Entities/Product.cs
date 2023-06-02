@@ -9,7 +9,7 @@ namespace SuperShop.Data.Entities
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(50, ErrorMessage ="Ehe field {0} can contain {1} characters length.")]
+        [MaxLength(50, ErrorMessage ="The field {0} can contain {1} characters length.")]
         public string Name { get; set; }
 
 
@@ -35,5 +35,8 @@ namespace SuperShop.Data.Entities
 
         [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = false)]
         public double Stock { get; set; }
+
+
+        public User User { get; set; }
     }
 }
